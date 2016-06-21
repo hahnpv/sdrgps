@@ -1,0 +1,9 @@
+Hi,
+
+Here are the matlab scripts that I used to process your data. These succeed at outputting pseudoranges estimates for 6 satellites for the full duration of the flight, until 180 secs into the dataset (8 satellites also work, but the last two are somewhat noisy).
+
+However, the scripts only extract the pseudoranges, and does not do anything with them.  Do you have or know of a program which can process RINEX observation files into position fixes?  If you do, I will write the script that generates such a file.  If not, I can also write a matlab script to compute position fixes directly from the pseudoranges, but that implies a bit more work, so I would rather use the first option if possible.
+
+Also please note that the scripts are very messy right now and somewhat customized to your dataset, they're not really a general tool for GNSS processing (although they could be cleaned up eventually).
+
+Let me know if there's any issue.  The main script to run is "gps_process_2.m".  You should only have to change the filenames in "gps_process_2.m" and "load_rinex_observation.m".
